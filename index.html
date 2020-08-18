@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oster Grammar School</title>
+
+    <link rel="icon" href="graduation.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1200px )" href="Res_style.css">
+    <link rel="stylesheet" media="screen and (max-width: 800px )" href="phone.css">
+    <link rel="stylesheet" media="screen and (max-width: 420px )" href="samsung.css">
+    <link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
+
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <script>
+
+        function myFunction(x, z) {
+            var arr = document.getElementById("home-heading");
+
+         
+            if (z.matches) { // If media query matches
+              
+                arr.style.marginTop = "100px ";
+                arr.style.marginBottom = "0px";
+                console.log("We here") ;
+
+            } else if(x.matches) {
+                
+                arr.style.marginTop = "175px ";
+                arr.style.marginBottom = "10px";
+                console.log("m here /n");
+            }
+            else  {
+                arr.style.margin = "227px 50px";
+                console.log(" I m here /n");
+            }
+        }
+
+
+
+        function Welcome() {
+
+
+            var x = window.matchMedia("(max-width: 1200px)")
+            var z = window.matchMedia("(max-width: 420px)")
+            myFunction(x,z) // Call listener function at run time
+            x.addListener(myFunction) // Attach listener function on state changes 
+
+
+        }
+
+        function navbar() {
+            var i = document.getElementById("navbar-container");
+
+            i.style.toggle = ".show";
+        }
+
+    </script>
+
+</head>
+
+<body onmouseover="Welcome()">
+    <header class="navbar-head">
+        <img src="logo.png">
+        <p style="margin-top: 22px;  font-family: 'Alatsi';font-size: 19px;"> OSTER GRAMMAR SCHOOL</p>
+    </header>
+
+    <nav class="navbar-container" id="navbar-container">
+        <ul class="navbar-list">
+            <li id="home"><a href="#home">Home</a></li>
+            <li id="home"><a href="#con_us">about us</a></li>
+            <li id="home"><a href="#contactUs">contact us</a></li>
+
+        </ul>
+
+        <div class="Search-dropdown">
+            <input type="text" placeholder="Search.." id="myInput">
+            <div class="dropdown dp-block">
+                <li id="home"><a href="#home">Home</a></li>
+                <li id="home"><a href="#con_us">about us</a></li>
+                <li id="#contactUs"><a href="#contactUs">contact us</a></li>
+            </div>
+
+        </div>
+        </div>
+    </nav>
+
+    <section class="Home">
+
+        <h1 id="home-heading"> Welcome to OSTER GRAMMAR SCHOOL ..</h1>
+
+
+        <form class="form-signin" id="home">
+            <img class="mb-4" src="logosiginin.png" alt="SIGN IN" width="72" height="72">
+            <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required=""
+                autofocus="">
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+            <div class="checkbox mb-3">
+                <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            <p class="mt-5 mb-3 text-muted">© 2017-2020</p>
+        </form>
+
+
+
+    </section>
+
+    <section id = "back_color_blue">
+        <div class="container-aboutus" id="con_us" onmouseover="navbar()">
+
+            <div class="row1">
+                <div class="col-md-4 bg-primary">
+                    <img class="image-row" src="CS.jpg">
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
+                        mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
+                        magna
+                        mollis euismod. Donec sed odio dui. </p>
+                    <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                </div>
+                <div class="col-md-4 bg-success">
+                    <img class="image-row" src="Eng.jpg">
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
+                        mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
+                        magna
+                        mollis euismod. Donec sed odio dui. </p>
+                    <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                </div>
+                <div class="col-md-4 bg-warning">
+                    <img class="image-row" src="Med.jpg">
+                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id
+                        ligula
+                        porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+                        nibh,
+                        ut fermentum massa justo sit amet risus.</p>
+                    <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    <hr>
+
+    <section id="contactUs">
+        <div class="container contact-form">
+            <div class="contact-image">
+                <img id="con_img" src="mail.png" alt="Contact US">
+            </div>
+            <form method="post">
+                <h3>Drop Us a Message</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *"
+                                value="">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="btnSubmit" class="btnContact" value="Send Message">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea name="txtMsg" class="form-control" placeholder="Your Message *"
+                                style="width: 100%; height: 150px;"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script>
+
+        burger = document.querySelector('#myInput')
+        rightNav = document.querySelector('.dropdown')
+
+
+
+        burger.addEventListener('click', () => {
+            rightNav.classList.toggle('dp-block');
+
+        })
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
+        integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

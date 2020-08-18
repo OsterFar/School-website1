@@ -1,0 +1,32 @@
+#home-heading{
+    font-size: 2rem;
+    margin-left: 24vw;
+    margin-top: 167px;
+    margin-right: 0px;
+}
+.Home::before{
+    height: 780px;
+}
+
+#back_color_blue{
+    top: 880px;
+    height: 133vh;
+}
+
+
+
+#contactUs{
+
+    top: 981px;
+}
+
+.navbar-list{
+   display:none;
+}
+
+.Search-dropdown{
+
+    margin: auto;
+    margin-bottom: 7px;
+
+}

@@ -1,0 +1,181 @@
+*{
+    margin:0px ;
+}
+.navbar-head{
+
+    display: flex;
+    background-color:rgb(197, 200, 192);
+    justify-content: center;
+}
+.navbar-list{
+    display: flex;
+    list-style: none;
+    margin: 10px 5px;
+    padding: 10px 50px;
+    
+}
+
+.navbar-list li a{
+    margin: auto;
+    text-decoration: none;
+    color:white ;
+    padding: 3px 32px;
+   
+}
+.navbar-list li a:hover{
+   background-color: white;
+   color:black ;
+   border:1px solid white;
+   border-radius:10px ;    
+}
+.navbar-container{
+    
+    display: flex;
+    background-color: darkgray;
+    position: fixed;
+    width: 100%;
+    top: 63px;
+    z-index: 10;
+}
+.show{
+    top:0px ;
+}
+.btn{
+    width:50%;
+}
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(197, 200, 192 );
+    border-radius:10px ;
+    color:black ;
+
+
+}
+
+.dropdown li{
+   list-style: none;
+   margin:2px 3px ;
+
+}
+.dropdown li:hover{
+     
+    background-color:white;
+    color:black;
+    border:1px solid white;
+    border-radius:10px;
+}
+.dp-block{
+ display: none;
+}
+#myInput{
+    margin-top: 18px;
+}
+.Search-dropdown{
+     
+    margin-left: auto;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+/* End of Navbar and header 
+
+===Now Home page ===== */
+
+.Home::before{
+    background:url('homepic.jpg') no-repeat center center/cover ;
+    content: "";
+    position: absolute;
+    height: 549px;
+    top: 100px;
+    left: 0px;
+    width: 100%;
+    z-index: -10;
+    opacity: 0.95;
+
+}
+.Home{
+    /*display: flex;
+    justify-content: right;
+    */text-align: center;
+}
+#home-heading{
+
+    color : white ;
+    margin:227px -620px;
+    float: left;
+    font-family: 'Anton', sans-serif;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.86,0,.07,1);
+    transition-duration: 4s;
+}
+
+.form-signin{
+    float: right;
+    margin-top: 34px;
+    margin-right: 50px;  
+    border: 3px solid gray;
+    border-radius: 11px;
+    padding: 33px 55px;
+
+}
+
+.container-aboutus{
+  
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: rgb(186, 214, 231);
+    z-index: -3;
+    height: 123%;
+    justify-content: center;
+}
+#back_color_blue{
+    
+    background-color:rgb(186, 214, 231);
+    background: size 100% ;
+    content: "";
+    position: absolute;
+    height: 550px;
+    top: 649px;
+    left: 0px;
+    width: 100%;
+    z-index: -10;
+    opacity: 0.95;
+
+}
+.image-row{
+
+
+    width: 100%;
+    height: 243px;
+
+}
+#contactUs{
+    position: absolute;
+    top: 677px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    margin:0px ;
+    padding: 0px;
+    z-index:-2 ;
+    background:url('contact.jpg') no-repeat center center/cover ;
+}
+#con_img{
+    width: 200px;
+    margin: 23px 2px;
+}
+
+.row1{
+    top: -45px;
+    position: absolute;
+    width: 543px;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: auto ; 
+}
